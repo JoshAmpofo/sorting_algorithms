@@ -29,8 +29,11 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
-/* Temp functions */
+/* Helper functions */
 void swap(listint_t **head, listint_t *nd_1, listint_t *nd_2);
+void quicksort_helper(int *array, int low, int high, size_t size);
+int partition(int *array, int low, int high, size_t size);
+void swap2(int *a, int *b);
 
 
 #endif /* SORT_H */
